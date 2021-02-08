@@ -265,6 +265,14 @@ alert_json =
 -- 8. configure tweaks
 ---------------------------------------------------------------------------
 
+search_engine = { search_method = "hyperscan" }
+
+detection = {
+hyperscan_literals = true,
+pcre_to_regex = true
+}
+
+
 if ( tweaks ~= nil ) then
     include(tweaks .. '.lua')
 end

@@ -15,4 +15,5 @@ snort2lua -c /usr/local/etc/snort/rules/snort.rules -r /usr/local/etc/snort/rule
 
 cd ../
 
-cp config/snort.lua /usr/local/etc/snort/snort.lua
+../snort-config.sh
+
