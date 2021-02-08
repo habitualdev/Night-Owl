@@ -135,3 +135,9 @@ make install
 #Now we test snort
 /usr/local/bin/snort -V
 
+#Create and begin filling a config folder
+mkdir -p /usr/local/etc/snort/rules/iplists 
+
+cd $workdir
+
+./pull-pork.sh
