@@ -1,4 +1,4 @@
-#!\bin\bash
+#!/bin/bash
 
 #Night Owl Build
 
@@ -136,4 +136,4 @@ mkdir -p /usr/local/etc/snort/rules/iplists
 
 cd $workdir
 
-./config/pull-pork.sh
+./pull-pork.sh

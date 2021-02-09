@@ -13,3 +13,9 @@ mkdir -p /var/log/snort
 chmod -R 5775 /var/log/snort
 
 chown -R snort:snort /var/log/snort
+
+cp BUILD/config/snort3.service  /lib/systemd/system/snort3.service
+
+systemctl enable snort3
+
+service snort3 start
