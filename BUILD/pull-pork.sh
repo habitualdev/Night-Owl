@@ -4,7 +4,7 @@ git clone https://github.com/shirkdog/pulledpork
 cd pulledpork
 
 #move our config over top the default
-cp ../config/pulledpork.conf etc/pulledpork.conf
+cp ../BUILD/config/pulledpork.conf etc/pulledpork.conf
 
 ./pulledpork.pl -c etc/pulledpork.conf -p /usr/local/bin/snort -P -S 3.1.1.0
 
@@ -15,5 +15,5 @@ snort2lua -c /usr/local/etc/snort/rules/snort.rules -r /usr/local/etc/snort/rule
 
 cd ../
 
-../snort-config.sh
+bash BUILD/snort-config.sh
 
