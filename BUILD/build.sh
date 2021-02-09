@@ -11,7 +11,6 @@ export PATH=/usr/local/zeek/bin:$PATH
 #Store some variables to make life easier
 workdir=$(pwd)
 echo $workdir
-read
 #Install Neccesary dependencies
 
 apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev libtool uuid-dev asciidoc dblatex source-highlight w3m libtool git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev libmnl-dev ethtool
@@ -28,7 +27,6 @@ cd libsafec-08112019.0-gad76c7/
 ./configure
  make
  make install
-read
 #move back to original directory
 cd $workdir
 
@@ -42,7 +40,6 @@ cd pcre-8.43
 ./configure
 make
 sudo make install
-read
 #Move up two
 cd $workdir
 
@@ -56,7 +53,6 @@ cd gperftools-2.7.90
 ./configure
 make
 make install
-read
 #You know the drill...
 cd $workdir
 
@@ -140,4 +136,4 @@ mkdir -p /usr/local/etc/snort/rules/iplists
 
 cd $workdir
 
-./pull-pork.sh
+./config/pull-pork.sh
