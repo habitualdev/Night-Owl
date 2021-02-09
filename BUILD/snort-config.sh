@@ -1,8 +1,8 @@
 #!/bin/bash
 pwd
-cp BUILD/config/snort.lua /usr/local/etc/snort/snort.lua
+cp config/snort.lua /usr/local/etc/snort/snort.lua
 
-cp BUILD/config/snort_defaults.lua /usr/local/etc/snort/snort_defaults.lua
+cp config/snort_defaults.lua /usr/local/etc/snort/snort_defaults.lua
 
 groupadd snort
 
@@ -14,7 +14,7 @@ chmod -R 5775 /var/log/snort
 
 chown -R snort:snort /var/log/snort
 
-cp BUILD/config/snort3.service  /lib/systemd/system/snort3.service
+cp config/snort3.service  /lib/systemd/system/snort3.service
 
 systemctl enable snort3
 
