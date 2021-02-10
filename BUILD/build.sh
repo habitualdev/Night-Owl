@@ -66,7 +66,6 @@ cd ragel-6.10
 ./configure
 make
 make install
-read
 #Up we go!
 cd $workdir
 
