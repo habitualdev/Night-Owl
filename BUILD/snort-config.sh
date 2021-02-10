@@ -19,3 +19,5 @@ cp config/snort3.service  /lib/systemd/system/snort3.service
 systemctl enable snort3
 
 service snort3 start
+
+./splunk.sh

@@ -14,4 +14,4 @@ read port -p "Splunk forwarder port: "
 
 /opt/splunkforwarder/bin/splunk add monitor /var/log/snort
 
-/opt/splunkforwarder/bin/splunk add monitor /opt/zeek/
+./zeek-config.sh
