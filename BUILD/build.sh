@@ -6,7 +6,7 @@ echo 'deb http://download.opensuse.org/repositories/security:/zeek/xUbuntu_18.04
 curl -fsSL https://download.opensuse.org/repositories/security:zeek/xUbuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/security_zeek.gpg > /dev/null
 sudo apt update
 sudo apt install zeek-lts
-export PATH=/usr/local/zeek/bin:$PATH
+export PATH=/opt/zeek/bin:$PATH
 
 #Store some variables to make life easier
 workdir=$(pwd)
