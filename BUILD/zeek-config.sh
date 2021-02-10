@@ -30,6 +30,7 @@ do
 	echo $cidr >> /opt/zeek/etc/networks.cfg
 done
 
+echo "[zeek]" > /opt/zeek/etc/node.cfg
 echo "type=standalone" > /opt/zeek/etc/node.cfg
 echo "host=$ipaddr" >> /opt/zeek/etc/node.cfg
 echo "interface=ens160" >> /opt/zeek/etc/node.cfg

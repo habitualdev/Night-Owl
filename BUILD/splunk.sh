@@ -6,9 +6,9 @@ apt install ./splunkforwarder-amd64.deb
 
 export PATH="/opt/splunkforwarder/bin:$PATH"
 
-read master -p "Splunk host IP Address: "
+read -p "Splunk host IP Address: " master
 
-read port -p "Splunk forwarder port: "
+read -p "Splunk forwarder port: " port
 
 /opt/splunkforwarder/bin/splunk add forward-server $master:$port --accept-license
 
