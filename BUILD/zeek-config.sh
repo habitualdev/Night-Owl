@@ -31,8 +31,8 @@ do
 done
 
 echo "[zeek]" > /opt/zeek/etc/node.cfg
-echo "type=standalone" > /opt/zeek/etc/node.cfg
-echo "host=$ipaddr" >> /opt/zeek/etc/node.cfg
+echo "type=standalone" >> /opt/zeek/etc/node.cfg
+echo "host=localhost" >> /opt/zeek/etc/node.cfg
 echo "interface=ens160" >> /opt/zeek/etc/node.cfg
 
 echo "@load policy/tuning/json=logs.zeek" >> /opt/zeek/share/zeek/site/local.zeek
