@@ -86,10 +86,10 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DBOOST_ROOT=$workdir/boost/boost_1_72_0
 make
 make install
 
-#now to test Hyperscan
-./bin/unit-hyperscan
+#now to test Hyperscan - Commented out for now
+#./bin/unit-hyperscan
 
-echo "Did Hyperscan run properly? y/n"
+#echo "Did Hyperscan run properly? y/n"
 
 cd $workdir
 
@@ -127,8 +127,8 @@ cd build
 make
 make install
 
-#Now we test snort
-/usr/local/bin/snort -V
+#Now we test snort - Commented out for now
+#/usr/local/bin/snort -V
 
 #Create and begin filling a config folder
 mkdir -p /usr/local/etc/snort/rules/iplists 

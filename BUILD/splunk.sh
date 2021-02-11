@@ -6,12 +6,6 @@ apt install ./splunkforwarder-amd64.deb
 
 export PATH="/opt/splunkforwarder/bin:$PATH"
 
-read -p "Splunk host IP Address: " master
-
-read -p "Splunk forwarder port: " port
-
-/opt/splunkforwarder/bin/splunk add forward-server $master:$port --accept-license
-
-/opt/splunkforwarder/bin/splunk add monitor /var/log/snort
+/opt/splunkforwarder/bin/splunk add monitor /var/log/snort --accept-license
 
 ./zeek-config.sh
