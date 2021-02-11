@@ -6,7 +6,7 @@ echo "host=localhost" >> /opt/zeek/etc/node.cfg
 echo "interface=ens160" >> /opt/zeek/etc/node.cfg
 
 #Set up splunk forwarding of logs
-echo "@load policy/tuning/json=logs.zeek" >> /opt/zeek/share/zeek/site/local.zeek
+echo "@load policy/tuning/json-logs.zeek" >> /opt/zeek/share/zeek/site/local.zeek
 
 echo "[thruput]" >> /opt/splunkforwarder/etc/system/local/limits.conf
 echo "maxKBps = 0 # means unlimited" >> /opt/splunkforwarder/etc/system/local/limits.conf
