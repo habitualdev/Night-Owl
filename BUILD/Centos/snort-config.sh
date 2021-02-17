@@ -4,6 +4,8 @@ cp config/snort.lua /usr/local/etc/snort/snort.lua
 
 cp config/snort_defaults.lua /usr/local/etc/snort/snort_defaults.lua
 
+cp /usr/local/snort/etc/snort/file_magic.lua /usr/local/etc/snort/file_magic.lua 
+
 groupadd snort
 
 useradd snort -r -s /sbin/nologin -c SNORT_IDS -g snort
