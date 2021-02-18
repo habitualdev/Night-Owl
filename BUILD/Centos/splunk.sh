@@ -4,7 +4,7 @@ wget -O splunkforwarder-amd64.rpm 'https://www.splunk.com/bin/splunk/DownloadAct
 
 dnf install -y ./splunkforwarder-amd64.rpm
 
-export PATH="/opt/splunkforwarder/bin:$PATH"
+echo 'export PATH="/opt/splunkforwarder/bin:$PATH"' >> /etc/profile
 
 /opt/splunkforwarder/bin/splunk add monitor /var/log/snort --accept-license
 
