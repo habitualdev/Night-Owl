@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dnf -y install perl-libwww-perl perl-DBI perl-DBD-MySQL perl-GD perl-Sys-Syslog perl-LWP-Protocol-https
+dnf -y install perl-libwww-perl perl-DBI perl-DBD-MySQL perl-GD perl-Sys-Syslog perl-LWP-Protocol-https perl-Archive-Tar
 git clone https://github.com/shirkdog/pulledpork
 cd pulledpork
 #move our config over top the default
