@@ -49,4 +49,6 @@ cd ../../
 #Create and begin filling a config folder
 mkdir -p /usr/local/etc/snort/rules/iplists
 
+echo 'export PATH="$PATH:/usr/local/snort/bin"' >> /etc/profile
+
 ./pull-pork.sh
