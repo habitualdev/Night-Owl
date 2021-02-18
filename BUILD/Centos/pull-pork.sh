@@ -11,5 +11,5 @@ cp ../config/pulledpork.conf etc/pulledpork.conf
 /usr/local/snort/bin/snort2lua -c /usr/local/etc/snort/rules/snort.rules -r /usr/local/etc/snort/rules/snort.rules
 
 cd ../
-bash ./snort-config.sh
+./snort-config.sh
 

@@ -10,3 +10,5 @@ su zeek -c './zeekbuild.sh'
 
 setcap cap_net_raw=eip /opt/zeek/bin/zeek
 setcap cap_net_raw=eip /opt/zeek/bin/capstats
+
+./steno-build.sh

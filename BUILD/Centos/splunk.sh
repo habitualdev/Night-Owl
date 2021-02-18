@@ -8,4 +8,4 @@ export PATH="/opt/splunkforwarder/bin:$PATH"
 
 /opt/splunkforwarder/bin/splunk add monitor /var/log/snort --accept-license
 
-./zeek-config.sh
+./zeek-install.sh
