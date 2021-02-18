@@ -11,8 +11,10 @@ Stenographer - Full PCAP capture
 
 How to install:
 
-```git clone https://github.com/roaldi/Night-Owl/```
+```git clone https://github.com/roaldi/Night-Owl```
+
 ```cd Night-Owl/Build/<OS>```
+
 ```sudo ./ build.sh```
 
 This will install snort, zeek, and stenographer. Additionally, it will download and use PulledPork to download and load community rules by default. 
