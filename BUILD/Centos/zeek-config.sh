@@ -21,3 +21,4 @@ systemctl enable zeek
 
 #begin logging
 /opt/splunkforwarder/bin/splunk start
+./steno-build.sh
