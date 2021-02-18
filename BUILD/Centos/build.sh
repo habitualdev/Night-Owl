@@ -9,7 +9,7 @@ dnf -y install vim git
 echo '/usr/local/lib' >> /etc/ld.so.conf.d/local.conf
 echo '/usr/local/lib64' >> /etc/ld.so.conf.d/local.conf
 ldconfig
-dnf -y install flex bison gcc gcc-c++ make cmake automake autoconf libtool
+dnf -y install flex bison gcc gcc-c++ make cmake automake autoconf libtool wget
 dnf -y install libpcap-devel pcre-devel libdnet-devel hwloc-devel openssl-devel zlib-devel luajit-devel pkgconf libmnl-devel libunwind-devel
 dnf -y install libnfnetlink-devel libnetfilter_queue-devel
 git clone https://github.com/snort3/libdaq.git
