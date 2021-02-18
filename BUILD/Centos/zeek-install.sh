@@ -1,14 +1,6 @@
-dnf install cmake make gcc gcc-c++ flex bison jemalloc-devel libpcap-devel openssl-devel python3 python3-devel swig zlib-devel
-dnf install libmaxminddb-devel
-groupadd zeek
-useradd zeek -g zeek
-mkdir /opt/zeek
-mkdir /opt/zeek/source
-chown -R zeek:zeek /opt/zeek
-chmod 750 /opt/zeek
-su zeek -c './zeekbuild.sh'
+workdir=$(pwd)
 
-setcap cap_net_raw=eip /opt/zeek/bin/zeek
-setcap cap_net_raw=eip /opt/zeek/bin/capstats
-
-./steno-build.sh
+cd /etc/yum.repos.d/
+wget https://download.opensuse.org/repositories/security:zeek/CentOS_8/security:zeek.repo
+yum install zeek-lts
+cd $workdir
