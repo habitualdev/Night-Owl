@@ -8,4 +8,10 @@ echo 'export PATH="/opt/splunkforwarder/bin:$PATH"' >> /etc/profile
 
 /opt/splunkforwarder/bin/splunk add monitor /var/log/snort --accept-license
 
+read -p "Splunk host IP Address: " master
+
+read -p "Splunk forwarder port: " port
+
+/opt/splunkforwarder/bin/splunk add forward-server $master:$port
+
 ./zeek-install.sh

@@ -1,11 +1,5 @@
 #!/bin/bash
 
-read -p "Splunk host IP Address: " master
-
-read -p "Splunk forwarder port: " port
-
-/opt/splunkforwarder/bin/splunk add forward-server $master:$port
-
 continue=0
 #just some really simple regex to prevent basic errors#
 regex='(([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/[0-9]+))'
@@ -41,5 +35,3 @@ done
 
 echo "export PATH=/opt/zeek/bin:$PATH" >> ~/.bashrc
 echo "export PATH=/opt/splunkforwarder/bin:$PATH" >> ~/.bashrc
-
-
