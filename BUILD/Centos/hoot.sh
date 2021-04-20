@@ -29,6 +29,8 @@ done
 #Deploy settings and start zeek
 /opt/zeek/bin/zeekctl install
 
+/opt/zeek/bin/zeekctl deploy
+
 /opt/zeek/bin/zeekctl start
 
 /opt/splunkforwarder/bin/splunk start

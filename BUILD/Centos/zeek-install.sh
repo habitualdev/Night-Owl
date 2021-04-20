@@ -3,7 +3,7 @@
 workdir=$(pwd)
 
 cd /etc/yum.repos.d/
-wget https://download.opensuse.org/repositories/security:zeek/CentOS_8/security:zeek.repo
+wget -4 https://download.opensuse.org/repositories/security:zeek/CentOS_8/security:zeek.repo
 yum install zeek-lts
 echo 'export PATH="$PATH:/opt/zeek/bin"' >> /etc/profile
 cd $workdir
@@ -12,7 +12,7 @@ cd $workdir
 ip a | grep "[0-9]: " | cut -d ":" -f 2 | sed -r 's/\s+//g'
 
 read -p "Interface to listen on: " interface
-sensor_hostname=hostname
+sensor_hostname=$(hostname)
 
 echo "[zeek]" > /opt/zeek/etc/node.cfg
 echo "type=standalone" >> /opt/zeek/etc/node.cfg
