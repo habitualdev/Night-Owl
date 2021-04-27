@@ -35,4 +35,6 @@ systemctl enable snort3
 
 service snort3 start
 
-./splunk.sh
+sudo rpm -i https://packages.timber.io/vector/latest/vector-latest-1.x86_64.rpm
+
+./zeek-install.sh

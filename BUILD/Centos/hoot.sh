@@ -33,7 +33,4 @@ done
 
 /opt/zeek/bin/zeekctl start
 
-/opt/splunkforwarder/bin/splunk start
-
 echo "export PATH=/opt/zeek/bin:$PATH" >> ~/.bashrc
-echo "export PATH=/opt/splunkforwarder/bin:$PATH" >> ~/.bashrc
